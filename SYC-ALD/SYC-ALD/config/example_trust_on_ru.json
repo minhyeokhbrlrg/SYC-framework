@@ -1,0 +1,43 @@
+{
+  "_comment": "TRuST (Ru(TMM)(CO)3) on Ru. Relative paths are resolved against this file's folder.",
+
+  "precursor_gas_csv": "../data/TRuST_gas.csv",
+  "precursor_adsorbed_csv": "../data/TRuST_chemisorbed_template.csv",
+  "substrate_csv": "../data/Ru_substrate.csv",
+
+  "output_dir": "../runs/trust_on_ru",
+  "relax_before_dir": "../runs/trust_on_ru/before",
+  "relax_out_dir_pre": "../runs/trust_on_ru/relaxation",
+  "relax_after_dir": "../runs/trust_on_ru/after",
+  "relax_out_dir_post": "../runs/trust_on_ru/relaxation2",
+
+  "center_element": "Ru",
+  "site_element": "Ru",
+  "ligand_elements": ["C", "H"],
+
+  "area_size": 50.0,
+  "z_gas_min": 50.0,
+  "z_gas_max": 60.0,
+  "dz": 0.5,
+  "phys_gap_max": 3.0,
+  "phys_xy_cutoff": 5.0,
+  "overlap_scale": 0.2,
+
+  "max_cycles": 50,
+  "max_failures": 2000,
+  "max_exposures_per_cycle": 30,
+  "max_no_new_phy_streak": 5,
+  "saturation_limit_chem": 100,
+  "saturation_limit_phys": 100,
+  "seed": null,
+
+  "p_phys": 1.0,
+  "p_chem": 1.0,
+  "p_des_chem": 0.0,
+  "use_dynamic_prob": false,
+
+  "use_relaxation_pre": true,
+  "use_relaxation_post": true,
+  "poll_sec_pre": 60,
+  "poll_sec_post": 30
+}

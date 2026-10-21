@@ -1,0 +1,9 @@
+# SYC Monte Carlo driver (local machine)
+numpy>=1.21
+scipy>=1.7
+pandas>=1.3
+# openpyxl          # only needed for syc.io.load_xyz_excel
+
+# Relaxation watcher (scripts/matlantis_relax.py) runs on Matlantis, where these are preinstalled:
+#   ase
+#   pfp-api-client   (requires a Matlantis account)
